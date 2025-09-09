@@ -1,0 +1,143 @@
+html{
+  font-size: 16px
+}
+@font-face {
+  font-family: font;
+  src: url("assets/Outfit-VariableFont_wght.ttf");
+}
+body{
+  font-family: font;
+  margin:0;
+}
+
+p{
+  font-size:0.7rem;
+  font-family:font;
+  margin:0;
+}
+h1{
+  font-size:2.5rem;
+  font-weight:500;
+}
+h2{
+  font-size:1.5rem;
+  font-weight: 400;
+}
+#header{
+  height: 2.5rem;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100vw;
+  background-color: rgba(255,255,255,0);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  z-index: 20839750197325019873250918732;
+}
+.header-logo{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+#landing-page{
+  height: 100dvh;
+  box-sizing: border-box;
+  padding-right: 20vw;
+  padding-top:40vh;
+  padding-left: 5vw;
+  background-color: #E8F2FF;
+}
+#bookAppt{
+  border:none;
+  background-color: #ED7D31;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+}
+#about-us,#our-services{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#abt-us{
+  margin-top: -0.25rem;
+  width: 70%;
+}
+#about-us-stats{
+  margin-top: 1.5rem;
+  display:grid;
+  grid-template-columns: 1.1fr 0.9fr; 
+  width:100%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+#about-us-img{
+  width: 100%;
+  background-color: #E8F2FF;
+  height: 15rem;
+  border:none;
+}
+#our-services,#our-clinics{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width:100vw;
+  overflow: hidden;
+}
+#services-carousel{
+ margin-top: 2rem;
+ display: flex;
+ gap: 5vw;
+ transition: transform 0.4s ease-in-out;
+ box-sizing: border-box;
+}
+.services-box{
+  flex-shrink: 0;
+  height: 65vw;
+  width: 45vw;;
+  background-color: #E8F2FF;
+  border-radius: 1rem;
+  scale:0.9;
+  opacity: 0.5;
+  transition: scale 0.2s,opacity 0.2s;
+}
+#carousel-control{
+  margin-top: 1.5rem;
+  display:flex;
+  width:100vw;
+  justify-content: center;
+  gap: 1rem;
+  
+}
+.cc{
+  border-radius: 123rem;
+  border:none;
+  width:2rem;
+  height: 2rem;
+}
+#clinics-carousel{
+  margin-top: 2.5rem;
+  display:flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+#clinic-box{
+  height: 25rem;
+  width: 15rem;;
+  background-color: #E8F2FF;
+  border-radius: 1rem;
+}
+#reviews{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
