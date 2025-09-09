@@ -16,12 +16,22 @@ p{
   margin:0;
 }
 h1{
+  font-family:font;
   font-size:2.5rem;
   font-weight:500;
 }
 h2{
+  font-family: font;
   font-size:1.5rem;
   font-weight: 400;
+}
+h3{
+  font-family:font;
+  font-size:1rem;
+  font-weight:400;
+}
+a{
+  color:black;
 }
 #header{
   height: 2.5rem;
@@ -36,7 +46,7 @@ h2{
   left:0;
   width: 100vw;
   background-color: rgba(255,255,255,0);
-  transition: background-color 0.3s, box-shadow 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s,top 0.5s;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   z-index: 20839750197325019873250918732;
@@ -92,6 +102,9 @@ h2{
   width:100vw;
   overflow: hidden;
 }
+#our-clinics{
+  margin-top: 10vw;
+}
 #services-carousel{
  margin-top: 2rem;
  display: flex;
@@ -140,4 +153,53 @@ h2{
   flex-direction: column;
   align-items: center;
   margin-top: 5rem;
+  overflow: hidden;
+}
+#reviews-carousel{
+ margin-top: 2rem;
+ display: flex;
+ gap: 2vw;
+ transition: transform 0.4s ease-in-out;
+ box-sizing: border-box;
+}
+.reviews-box{
+  flex-shrink: 0;
+  height: 40vw;
+  width: 70vw;;
+  background-color: #E8F2FF;
+  border-radius: 1rem;
+  scale:0.9;
+  opacity: 0.5;
+  transition: scale 0.2s,opacity 0.2s;
+}
+.carousel-control{
+
+  border-radius: 123rem;
+  border:none;
+  width:2rem;
+  height: 2rem;
+}
+#footer{
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: rgb(245, 245, 245);
+   margin-top: 5rem;
+   padding-left: 2rem;
+   padding-top:2rem;
+   padding-bottom: 2rem;
+   box-sizing: border-box;
+   transition: scale 0.3s ease-in-out;
+   scale: 0.9
+}
+#footer-logo{
+  width: 2rem;
+}
+#footer-booking{
+  padding-left:1rem;
+  padding-right:1rem;
+  padding-top: 0.6rem;
+  padding-bottom:0.6rem;
+  border:none;
+  background-color: #ED7D31;
+  border-radius: 0.5rem;
 }
