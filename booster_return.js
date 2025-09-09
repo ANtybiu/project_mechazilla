@@ -48,3 +48,62 @@
 
   // Align to the first card initially
   updateCarousel();
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        const Rcarousel = document.getElementById("reviews-carousel");
+  const Rcontrols = document.querySelectorAll(".rc");
+
+  let Rindex = 0;
+  const Rcards = carousel.children.length;
+
+  function RupdateCarousel() {
+    const cardWidth = 72;
+    Rcarousel.style.transform = `translateX(${-Rindex * cardWidth}vw)`;
+  }
+
+  Rcontrols.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+      if(Rindex === -3 && i === -1){return};
+      if(Rindex === 3 && i === 1){return}
+      if(i!==1){
+        i = -1;
+      }
+      Rindex += i;
+      const allBoxes = document.querySelectorAll(".reviews-box");
+      allBoxes.forEach(box=>{
+       box.style.scale = 0.9;
+      box.style.opacity = 0.5;
+      })
+      document.getElementById(`rb${Rindex}`).style.scale = 1;
+      document.getElementById(`rb${Rindex}`).style.opacity = 1;
+      RupdateCarousel();
+    });
+  });
+
+
+  RupdateCarousel();
+  
+   const target1 = document.querySelector(".triggerHeaderGoner")
+ const observer1 = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          header.style.top = "-3.5rem"
+        } else if(!entry.isIntersecting){
+          header.style.top = "0"
+        }
+      });
+    });
+
+    observer1.observe(target1);
+    const footer = document.getElementById('footer')
+       const target12 = document.querySelector(".triggerFooterBigger")
+ const observer12 = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          footer.style.scale = '1';
+        } else if(!entry.isIntersecting){
+          footer.style.scale = "0.9"
+        }
+      });
+    });
+
+    observer12.observe(target12);
