@@ -28,8 +28,8 @@
 
   controls.forEach((btn, i) => {
     btn.addEventListener("click", () => {
-      if(index === -4 && i === -1){return};
-      if(index === 4 && i === 1){return}
+      if(index === -5 && i === -1){return};
+      if(index === 5 && i === 1){return}
       if(i!==1){
         i = -1;
       }
@@ -62,8 +62,8 @@
 
   Rcontrols.forEach((btn, i) => {
     btn.addEventListener("click", () => {
-      if(Rindex === -3 && i === -1){return};
-      if(Rindex === 3 && i === 1){return}
+      if(Rindex === -2 && i === -1){return};
+      if(Rindex === 2 && i === 1){return}
       if(i!==1){
         i = -1;
       }
