@@ -8,8 +8,11 @@ html{
 body{
   font-family: font;
   margin:0;
+  box-sizing: border-box;
 }
-
+    ::-webkit-scrollbar {
+        display: none; /* Hides the scrollbar */
+    }
 p{
   font-size:0.7rem;
   font-family:font;
@@ -88,11 +91,18 @@ a{
   text-align: center;
   margin-bottom: 1.5rem;
 }
-#about-us-img{
+#about-us-img,#kptbg{
   width: 100%;
   background-color: #E8F2FF;
   height: 15rem;
   border:none;
+}
+#kptbg{
+  height:40%;
+  background-color: #ccddf1;
+  border:none;  
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 #our-services,#our-clinics{
   display: flex;
@@ -104,6 +114,12 @@ a{
 }
 #our-clinics{
   margin-top: 10vw;
+}
+#clinic-desc{
+  height: 60%;
+  width:100%;
+  padding-left:1rem;
+  box-sizing: border-box;
 }
 #services-carousel{
  margin-top: 2rem;
@@ -121,6 +137,8 @@ a{
   scale:0.9;
   opacity: 0.5;
   transition: scale 0.2s,opacity 0.2s;
+  padding-top:10rem;
+  box-sizing: border-box;
 }
 #carousel-control{
   margin-top: 1.5rem;
@@ -147,6 +165,7 @@ a{
   width: 15rem;;
   background-color: #E8F2FF;
   border-radius: 1rem;
+  text-align: left;
 }
 #reviews{
   display:flex;
@@ -164,13 +183,15 @@ a{
 }
 .reviews-box{
   flex-shrink: 0;
-  height: 40vw;
+  height: 60vw;
   width: 70vw;;
-  background-color: #E8F2FF;
+  box-shadow: 0 0 0.7rem rgba(0,0,0,0.2);
   border-radius: 1rem;
   scale:0.9;
   opacity: 0.5;
   transition: scale 0.2s,opacity 0.2s;
+  padding:1rem;
+  box-sizing: border-box;
 }
 .carousel-control{
 
@@ -202,4 +223,31 @@ a{
   border:none;
   background-color: #ED7D31;
   border-radius: 0.5rem;
+}
+.clinic-contact{
+  display:flex;
+  align-items: center;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  padding: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  border:none;
+  background-color: #f9fcff;
+  border-radius: 0.6rem;
+  justify-content: space-between;
+}
+#whatsapp{
+  width:15%;
+  border-radius: 50%;
+  padding:0.4rem;
+  background-color: white;
+}
+#directions{
+  display:flex;
+  margin-top: 1.5rem;
+  width:100%;
+  justify-content: space-between;
+  padding-right: 1rem;
+  box-sizing: border-box;
 }
