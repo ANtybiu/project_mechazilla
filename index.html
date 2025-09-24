@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="go_for.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="header-popout" >
+      <p>About Us</p>
+      <p>Our Clinics</p>
+      <p>Our Services</p> 
+      <button id="header-contact"><p>Contact Us</p></button>
+    </div>
+    <div id="blur"></div>
+  <div id="header">
+    <img src="favicon.png" class="header-logo">
+    <img src="assets/hamburger.png" class="header-logo" id="header-hamburger" onclick="headerPop()">
+    
+  </div>
+
+  <div id="header-computer">
+    <img src="favicon.png" class="header-logo" style="margin-right: 25%;">
+    <div id="header-computers">
+      <p>About Us</p>
+    <p>Services</p>
+    <p>Clinics</p>
+     <button id="bookAppt"><p>Book an appointment</p></button>
+    </div>
+  </div>
+
+  <div id="landing-page">
+    <p id="notification"></p>
+    <p id="triggerHeaderWhite">WELCOME TO WEIKIEN DENTAL</p>
+    <h1 >Your Personalized Dental Care Starts Here</h1>
+    <button id="bookAppt"><p>Book an appointment</p></button>
+  </div>
+  <div id="about-us" class="view1">
+    <h2>ABOUT US</h2>
+    <p id="abt-us">Tee Dental Surgery was founded in the year 2000 by <strong>Dr. Tee Hui Kien</strong> in Pusat Bandar Puchong with a clear vision to make quality dental care accessible and affordable for the community. Since its humble beginnings, the clinic has grown steadily, building a reputation for professional excellence, compassion, and patient-centered service. Over the past 25 years, Tee Dental Surgery has proudly cared for more than <strong>70,000</strong> unique patients and completed over 100,000 treatments, ranging from preventive and restorative care dental solutions. In 2012, to accommodate its expanding patient base and provide a more modern and comfortable environment, the clinic was relocated to SetiaWalk, Puchong, where it continues to serve families across the area. Furthering its growth and commitment to community care, a new branch, Teecare Dental Clinic, was established in Seri Kembangan in 2024. Today, guided by Dr. Tee’s dedication, both clinics remain trusted destinations for quality family dental care. </p>
+    <div id="about-us-stats">
+      <p>Patients Treated</p>
+      <p>Since</p>
+      <h1 id="h1nm" style="margin:0;">70,000</h1>
+      <h1 id="h1nm" style="margin:0;">2000</h1>
+    </div>
+    <div id="about-us-img"></div>
+  </div>
+  <div id="our-services">
+    <h2>OUR SERVICES</h2>
+    <p id="abt-us">Please contact us for price/ enquires</p>
+    <div id="services-carousel">
+      <div class="services-box" id="sb-5"><p class="c">Consultation</p></div>
+      <div class="services-box" id="sb-4"><p class="c">Scaling & Polishing</p></div>
+      <div class="services-box" id="sb-3"><p class="c">Dental Filling</p></div>
+      <div class="services-box" id="sb-2"><p class="c">Extraction</p></div>
+      <div class="services-box" id="sb-1"><p class="c">Minor Oral Surgery</p></div>
+      <div class="services-box" id="sb0" style="opacity: 1; scale:1"><p class="c">Removable Denture</p></div>
+      <div class="services-box" id="sb1"><p class="c">Crown & Bridge</p></div>
+      <div class="services-box" id="sb2"><p class="c">Root Canal Treatment</p></div>
+      <div class="services-box" id="sb3"><p class="c">Tooth Whitening</p></div>
+      <div class="services-box" id="sb4"><p class="c">Night Guard</p></div>
+      <div class="services-box" id="sb5"><p class="c">Retainer</p></div>
+    </div>
+    <div id="carousel-control">
+      <button class="cc carousel-control" id="prev"><p><</p></button>
+      <button class="cc carousel-control" id="next"><p>></p></button>
+    </div>
+  </div>
+  <div id="our-clinics">
+    <h2>OUR CLINICS</h2>
+    <p id="abt-us">We prefer Whatsapp / Call</p>
+    <div id="clinics-carousel">
+      <div id="clinic-box">
+        <img id="kptbg" src="assets/kptbgIMG.jpeg">
+        <div id="clinic-desc">
+          <h3>Tee Dental Surgery</h3>
+          <p>Setia Walk F, 9-5, Pusat Bandar Puchong, 47160 Puchong, Selangor</p><br>
+          <p>Mon - Thu: 1:00PM to 7:00PM</p>
+          <p>Fri: 5:30PM to 8:30PM</p>
+          <p>Sat & Sun: 9:30PM to 8:30PM</p>
+          <div id="directions">
+            <img src="assets/whatsapp.png" id="whatsapp">
+            <img src="assets/google-maps.png" id="whatsapp">
+            <img src="assets/waze.webp" id="whatsapp">
+            <img src="assets/maps.png" id="whatsapp">
+          </div>
+        </div>
+        
+      </div>
+      <div id="clinic-box">
+        <img id="kptbg" src="assets/tdcBGIMG.jpg">
+        <div id="clinic-desc">
+          <h3>Tee Dental Surgery</h3>
+          <p>Setia Walk F, 9-5, Pusat Bandar Puchong, 47160 Puchong, Selangor</p><br>
+          <p>Mon - Thu: 1:00PM to 7:00PM</p>
+          <p>Fri: 5:30PM to 8:30PM</p>
+          <p>Sat & Sun: 9:30PM to 8:30PM</p>
+          <div id="directions">
+            <img src="assets/whatsapp.png" id="whatsapp">
+            <img src="assets/google-maps.png" id="whatsapp">
+            <img src="assets/waze.webp" id="whatsapp">
+            <img src="assets/maps.png" id="whatsapp">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div id="reviews">
+    <h2>OUR REVIEWS</h2>
+    <p>Genuine reviews from our patients</p>
+    <div id="reviews-carousel">
+      <div class="reviews-box" id="rb-2">b</div>
+      <div class="reviews-box" id="rb-1"><p>It's a very pleasant and comfortable dental clinic. This is their 2nd branch after the 1st branch in Setia Walk Puchong. The dentist(Dr Tee) is very skilful and knowledgeable. Have been visiting her for many years. It's definitely a good choice for all kinds of dental treatment, as far as I know.
+      </p>
+      <h2>- Steve Sor</h2>
+      </div>
+      <div class="reviews-box" id="rb0" style="opacity: 1; scale:1">
+        <p>My first time coming to Teecare clinic. I was scared at first but Dr and nurse guide me, helping me with my treatment and both are very kind. They keep me calm and keep checking on me to see if I was ok during the treatment which make me less nervous. Overall, I am really satisfied with the service and the price is really reasonable. Recommended! 5 star 🌟🌟🌟🌟🌟
+        </p>
+        <h2>-Ily Lily</h2>
+      </div>
+      <div class="reviews-box" id="rb1">e</div>
+      <div class="reviews-box" id="rb2">f</div>
+    </div>
+    <div id="carousel-control">
+      <button class="rc carousel-control" id="prevrc"><p><</p></button>
+      <button class="rc carousel-control" id="nextrc"><p>></p></button>
+    </div>
+  </div>
+  <div id="footer">
+    <img src="favicon.png" id="footer-logo">
+    <h3><a href="#about-us">About Us</a></h3>
+    <h3><a href="our-services">Services</a></h3>
+    <h3><a href="our-clinics">Clinics</a></h3>
+    <h3><a>Contact Us</a></h3>
+    <button id="footer-booking" class="triggerFooterBigger"><h3 style="margin:0;">Book Appointment</h3></button>
+    <br><br><br><br><br><br>
+    <h2 class="triggerHeaderGoner">Book an Appointment now!</h2>
+    <p>For price / enquires please contact us.</p>
+    <p>We prefer Phone Call / Whatsapp</p>
+    <br><br><br><br><br><br>
+    <h3 style="margin:0;">WEIKIEN DENTAL</h3>
+    <p>Your Personalized Dental Care Starts Here</p>
+  </div>
+<script src="booster_return.js"></script>
+</body>
+</html>
